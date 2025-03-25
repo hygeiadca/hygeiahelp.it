@@ -1190,6 +1190,15 @@ section,
   width: 100%;
 }
 
+.appointment .form-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.appointment .form-container iframe {
+  max-width: 100%;
+}
+
 .appointment .php-email-form .form-group {
   padding-bottom: 8px;
 }
