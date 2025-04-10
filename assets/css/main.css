@@ -1736,3 +1736,172 @@ section,
 .starter-section {
   /* Add your styles here */
 }
+
+/*--------------------------------------------------------------
+# Pricing Section Styling
+--------------------------------------------------------------*/
+.pricing .pricing-enhanced {
+  background-color: var(--surface-color);
+  border-radius: 12px;
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  height: 100%;
+  position: relative;
+  transition: all 0.3s ease;
+  overflow: hidden;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.pricing .pricing-enhanced:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+}
+
+.pricing .pricing-badge {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  background-color: #f8f9fa;
+  color: #495057;
+  padding: 8px 15px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 0 0 15px 15px;
+  z-index: 1;
+}
+
+.pricing .pricing-badge.highlight {
+  background-color: var(--accent-color);
+  color: var(--contrast-color);
+}
+
+.pricing .pricing-icon {
+  font-size: 42px;
+  color: var(--accent-color);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.pricing .pricing-header {
+  text-align: center;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.pricing .pricing-header h3 {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.pricing .price-box {
+  margin: 20px 0;
+}
+
+.pricing .price-box h4 {
+  font-size: 38px;
+  font-weight: 700;
+  color: var(--accent-color);
+  margin: 0;
+  display: inline-block;
+}
+
+.pricing .price-box h4 sup {
+  font-size: 50%;
+  top: -0.8em;
+}
+
+.pricing .price-box h4 small {
+  font-size: 16px;
+  color: #6c757d;
+  font-weight: 400;
+}
+
+.pricing .price-caption {
+  font-size: 14px;
+  color: #6c757d;
+  font-style: italic;
+  margin-top: 5px;
+}
+
+.pricing .pricing-features {
+  margin-bottom: 30px;
+}
+
+.pricing .feature-category {
+  margin-bottom: 15px;
+}
+
+.pricing .feature-category h5 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+}
+
+.pricing .feature-category h5 i {
+  margin-right: 10px;
+  color: var(--accent-color);
+}
+
+.pricing .feature-category ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.pricing .feature-category ul li {
+  margin-bottom: 5px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+}
+
+.pricing .feature-category ul li i {
+  color: var(--accent-color);
+  margin-right: 8px;
+  font-size: 14px;
+}
+
+.pricing .pricing-cta {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.pricing .pricing-guarantee {
+  margin-top: 15px;
+  font-size: 12px;
+  color: #6c757d;
+}
+
+.pricing .pricing-guarantee i {
+  margin-right: 5px;
+}
+
+.pricing .pricing-item.featured {
+  border: 2px solid var(--accent-color);
+  transform: scale(1.03);
+  z-index: 10;
+}
+
+.pricing .pricing-item.featured .pricing-header::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  opacity: 0.05;
+  background: var(--accent-color);
+}
+
+/* Stripe Button Styling */
+.pricing stripe-buy-button {
+  display: block !important;
+  margin: 0 auto;
+}
